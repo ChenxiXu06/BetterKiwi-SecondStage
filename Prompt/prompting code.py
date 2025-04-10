@@ -20,7 +20,7 @@ history.append({"role": "system", "content": "You should generate every question
 
 question = 1
 with open('questions.txt', 'w') as outfile_1, open('ratings.txt', 'w') as outfile_2:
-    while question <= 2:
+    while question <= 5:
         history.append({"role": "user", "content": f"generate a question on the {topic}"})
         
         response = client.chat.completions.create(
