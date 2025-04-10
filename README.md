@@ -1,5 +1,6 @@
 # BetterKiwi
 
+# Step 1 Environment & User Interface Setup
 # 🛠️ Open WebUI Local Setup Guide
 
 This guide will walk you through setting up a local environment using Anaconda and running Open WebUI on your machine.
@@ -10,7 +11,7 @@ Make sure you have the following installed:
 - [Anaconda](https://www.anaconda.com/products/distribution)
 - Python 3.11 or higher (Anaconda will help manage this)
 
-## 📦 Step 1: Create and Activate a New Environment
+## 📦 Step 1.1 : Create and Activate a New Environment
 
 1. Open Anaconda Prompt (Windows) or Terminal (macOS/Linux)  
 2. Create a new virtual environment:
@@ -25,14 +26,14 @@ conda create -n open-webui-env python=3.11
 conda activate open-webui-env
 ```
 
-## 📥 Step 2: Install Open WebUI
+## 📥 Step 1.2 : Install Open WebUI
 
 Once the environment is activated, run:
 ```bash
 pip install open-webui
 ```
 
-## 🚀 Step 3: Start the Server and Access the UI
+## 🚀 Step 1.3 : Start the Server and Access the UI
 
 Start the server:
 ```bash
