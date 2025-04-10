@@ -1,0 +1,62 @@
+# Chain-of-Thought (CoT) Prompting Overview
+
+## Why we use Chain-of-Thought (CoT) Prompting in generating Computer science questions?
+
+Chain-of-Thought (CoT) prompting is a technique that encourages large language models to explicitly outline their reasoning steps before arriving at an answer. In the context of generating computer science quiz questions, CoT prompting helps ensure:
+
+1. **Question Quality**: It encourages logically consistent and pedagogically valuable questions.
+2. **Transparency**: The rationale behind each question is visible, making it easier to review, debug, or adapt the question.
+3. **Difficulty Calibration**: CoT reveals the intended traps and learning goals behind each distractor.
+4. **Automation with Purpose**: When generating questions in batch or via a pipeline, CoT provides self-contained commentary on why the question was formed the way it was—ideal for dataset creation or curriculum building.
+
+
+Below are examples of questions generated using our code and the CoT prompting to illustrate its power.
+
+---
+
+### Example 1: Binary Search Tree with Faulty Deletion
+
+**Question**:  
+Consider a binary search tree (BST) where each node contains an integer. You need to find the smallest element in the tree greater than a given integer X. However, to make this task a little more complex let's consider an incomplete deletion scenario: if a node with two children is deleted, its in-tree successor (the smallest node in the right subtree) replaces its value, but instead of deleting this in-tree successor node, it's incorrectly left in place, duplicating its value in the tree.  
+Given this scenario and the initial BST below:
+
+   20
+  /  \
+10    30
+/ \  /  \
+5 15 25 35
+
+
+If the node `20` is deleted and you're tasked to find the smallest node greater than `17`, which node will it be?
+
+**Choices**:  
+A) 20  
+B) 25  
+C) 15  
+D) 30  
+
+**Answer**: A) 20
+
+**Chain of Thought (CoT)**:
+1. **Objective Understanding**: The question targets understanding of BST operations, specifically handling "next greater" queries.
+2. **Introducing Complexity**: A flawed deletion process introduces ambiguity, testing not only correct logic but also how edge-case changes affect the structure.
+3. **Value Choice**: `17` is selected to sit precisely between mid-tier values to ensure subtlety.
+4. **Distractor Design**:
+   - `25` and `30` test naive application of the BST rule.
+   - `15` tempts those who confuse "closest" with "greater".
+   - `20` is the right answer only if the student understands the duplicate structure caused by the deletion.
+
+
+##Our reminders:
+Do not pay attention to the level of difficulty of the question at this stage. The main point is that we need to know the internal logic wht LLM generates such a question. At present, the level of difficulty is very low, which means that we still have a lot to work on to make it a tricky-generator!
+
+## Summary
+
+Using CoT prompting when generating CS questions ensures that:
+- Questions are pedagogically grounded and thought through.
+- Distractors are meaningful and based on common misconceptions.
+- Each item can be reused or audited with clear rationales.
+This technique not only enhances the quality of generated content but also simulates how educators themselves justify good questions.
+
+
+
