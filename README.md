@@ -1,6 +1,7 @@
 # BetterKiwi
 
-# Step 1 Environment & User Interface Setup
+# 😎 Step 1 Environment & User Interface Setup
+
 # 🛠️ Open WebUI Local Setup Guide
 
 This guide will walk you through setting up a local environment using Anaconda and running Open WebUI on your machine.
@@ -47,7 +48,7 @@ You’re now ready to use Open WebUI locally!
 
 
 
-# Step 2 Creating Models by Importing Your API and Using Prompt Designed by Ours
+# 🔧 Step 2 Creating Models by Importing Your API and Using Prompt Designed by Ours
 
 ## 💡 Step 2.1 Create an Account
 
@@ -67,9 +68,11 @@ Then, click the Control option in the top-right corner of the screen.
 Paste the contents of the prompt file into the System Prompt field.
 
 
+
+
 # 🎉 Step 3 Start your Conversation
 
-After finishing above instructions, you successfully got a perfect test problem giver!
+Congrats! You've now got yourself a perfect test problem generator after following the steps!
 
 
 
