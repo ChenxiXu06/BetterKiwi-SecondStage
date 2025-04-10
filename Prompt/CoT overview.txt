@@ -52,13 +52,4 @@ Do not pay attention to the level of difficulty of the question at this stage.
 The main point is that we need to know the internal logic wht LLM generates such a question. 
 At present, the level of difficulty is very low, which means that we still have a lot to work on to make it a tricky-generator!
 
-## Summary
-
-Using CoT prompting when generating CS questions ensures that:
-- Questions are pedagogically grounded and thought through.
-- Distractors are meaningful and based on common misconceptions.
-- Each item can be reused or audited with clear rationales.
-This technique not only enhances the quality of generated content but also simulates how educators themselves justify good questions.
-
-
 
