@@ -1,6 +1,6 @@
 from openai import OpenAI
 
-client = OpenAI(api_key = "Your OpenAI API")
+client = OpenAI(api_key = "Your OpenAI API")  # Due to requirements, API can not be presented. You should use your own OpenAI API
 topic = input("Enter the data structure topic you want to be tested on >>> ")
 
 history = [
