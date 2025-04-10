@@ -47,9 +47,30 @@ You’re now ready to use Open WebUI locally!
 
 
 
-# Step 2 Creating Models by Importing Your API
+# Step 2 Creating Models by Importing Your API and Using Prompt Designed by Ours
 
-## Step 2.1 Create an Account and Login In
+## 💡 Step 2.1 Create an Account
+
+Create an account using email and log in
+
+## 🤖 Step 2.2 Importing API
+
+After logging in, click the account icon in the bottom-left corner.
+Then navigate to Admin Panel > Settings > Connection.
+Enter your OpenAI API key in the appropriate field.
+
+## ✨ Step 2.3 Choosing Models
+
+Next, return to the home screen and start a new conversation.
+In the Model dropdown, select 4o-mini.
+Then, click the Control option in the top-right corner of the screen.
+Paste the contents of the prompt file into the System Prompt field.
+
+
+# 🎉 Step 3 Start your Conversation
+
+After finishing above instructions, you successfully got a perfect test problem giver!
+
 
 
 
