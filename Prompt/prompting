@@ -1,7 +1,8 @@
-# Prompting Strategy for BetterKiwi
+ple# Prompting Strategy for BetterKiwi
 
 ## Overview
-Our code uses OpenAI's API and GPT-4-turbo model to generate complex and tricky multiple-choice questions (MCQs) related to computer science topics (we use data structures course ). It simulates the role of a difficult teacher who intentionally designs questions to test deep understanding and careful reasoning.
+Our code uses OpenAI's API and GPT-4-turbo model to generate complex and tricky multiple-choice questions (MCQs) related to computer science topics (we use data structures course as an example). 
+It simulates the role of a difficult teacher who intentionally designs questions to test deep understanding and careful reasoning.
 
 ## System Prompt
 The assistant is initialized with a system prompt that establishes the tone and purpose of the assistant:
@@ -18,7 +19,7 @@ This primes the model to:
 3. The assistant then continues generating two more questions through iterative messages.
 4. For each question, the assistant is asked to self-evaluate its difficulty and quality with a rating from 1 to 5.
 
-## Iterative Prompting
+## Iterative Prompting (Initially, we assigned the generator to generate 5 tricky questions)
 The dialogue history accumulates with every step:
 - After each generated question, the assistant's reply is appended to the history.
 - A follow-up user prompt requests a rating for that specific question.
@@ -31,11 +32,5 @@ The dialogue history accumulates with every step:
 This reinforces the importance of CoT reasoning for each subsequent question.
 - Questions and ratings are saved in `questions.txt` and `ratings.txt` respectively, creating a traceable and reusable dataset.
 
-## Future Improvements
-- Add user customization for number of questions or difficulty levels.
-- Include a multiple-choice answer key with explanations.
-- Implement feedback loops where users can upvote/downvote questions for training.
 
-## Conclusion
-This prompting structure balances creative generation with quality control through role priming and CoT reasoning. It's ideal for generating diverse and pedagogically rich CS quiz material.
 
