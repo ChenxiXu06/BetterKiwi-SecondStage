@@ -8,7 +8,7 @@ This guide will walk you through setting up a local environment using Anaconda a
 
 Make sure you have the following installed:
 - [Anaconda](https://www.anaconda.com/products/distribution)
-- Python 3.8 or higher (Anaconda will help manage this)
+- Python 3.11 or higher (Anaconda will help manage this)
 
 ## 📦 Step 1: Create and Activate a New Environment
 
@@ -17,4 +17,39 @@ Make sure you have the following installed:
 
 ```bash
 conda create -n open-webui-env python=3.11
+```
+
+3.Activate the environment
+
+```bash
+conda activate open-webui-env
+```
+
+## 📥 Step 2: Install Open WebUI
+
+Once the environment is activated, run:
+```bash
+pip install open-webui
+```
+
+## 🚀 Step 3: Start the Server and Access the UI
+
+Start the server:
+```bash
+open-webui serve
+```
+Then open your browser and go to:
+```bash
+http://localhost:8080
+```
+You’re now ready to use Open WebUI locally!
+
+
+
+
+
+
+
+
+
 
