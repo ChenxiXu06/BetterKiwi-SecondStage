@@ -18,13 +18,13 @@ Make sure you have the following installed:
 2. Create a new virtual environment:
 
 ```bash
-conda create -n open-webui-env python=3.11
+conda create -n open-webui python=3.11
 ```
 
 3.Activate the environment
 
 ```bash
-conda activate open-webui-env
+conda activate open-webui
 ```
 
 ## 📥 Step 1.2 : Install Open WebUI
