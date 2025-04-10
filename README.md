@@ -63,7 +63,7 @@ Enter your OpenAI API key in the appropriate field.
 ## ✨ Step 2.3 Choosing Models
 
 Next, return to the home screen and start a new conversation.
-In the Model dropdown, select 4o-mini/ O1-mini-2024-09-12.
+In the Model dropdown, select 4o-mini/ o1-mini-2024-09-12.
 Then, click the Control option in the top-right corner of the screen.
 Paste the contents of the prompt file into the System Prompt field.
 
