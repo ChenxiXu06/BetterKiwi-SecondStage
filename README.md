@@ -47,8 +47,9 @@ You’re now ready to use Open WebUI locally!
 
 
 
+# Step 2 Creating Models by Importing Your API
 
-
+## Step 2.1 Create an Account and Login In
 
 
 
