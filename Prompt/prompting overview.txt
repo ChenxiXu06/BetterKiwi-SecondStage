@@ -1,8 +1,12 @@
-ple# Prompting Strategy for BetterKiwi
+Prompting Strategy for BetterKiwi
 
+Part I 
 ## Overview
-Our code uses OpenAI's API and GPT-4-turbo model to generate complex and tricky multiple-choice questions (MCQs) related to computer science topics (we use data structures course as an example). 
+The code in this folder serves as the original mind for our DIC, which uses OpenAI's API and GPT-4-turbo model to generate complex and tricky multiple-choice questions (MCQs) related to computer science topics (we use data structures course as an example). 
+
 It simulates the role of a difficult teacher who intentionally designs questions to test deep understanding and careful reasoning.
+
+Part II Explanation for the initial code
 
 ## System Prompt
 The assistant is initialized with a system prompt that establishes the tone and purpose of the assistant:
@@ -11,7 +15,7 @@ The assistant is initialized with a system prompt that establishes the tone and 
 This primes the model to:
 - Generate questions with misleading answer choices.
 - Emphasize depth of understanding.
-- Provide a reasoning process (chain-of-thought or CoT) behind the question design.
+- Provide a reasoning process (chain-of-thought or CoT, which will be talked in detail in "COT overview.txt") behind the question design.
 
 ## User Interaction Flow
 1. The user inputs a data structure topic (e.g., "linked lists", "trees").
