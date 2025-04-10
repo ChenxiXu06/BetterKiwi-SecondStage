@@ -1,5 +1,13 @@
 # BetterKiwi
+# Project Purpose
 
+This project aims to build a prompt-engineered system powered by large language models (LLMs), designed specifically for educators. Given a set of knowledge points, the system generates complex and high-quality exam-style questions. By leveraging API calls and refined prompt techniques, we explore how LLMs can assist in educational content creation while maintaining control and pedagogical relevance.
+
+
+
+
+
+# Setup
 # 😎 Step 1 Environment & User Interface Setup
 
 # 🛠️ Open WebUI Local Setup Guide
