@@ -11,14 +11,15 @@ history = [
 response = client.chat.completions.create(
     model="gpt-4-turbo",
     messages=history
-)
+)   
+# You can select your own model
 
 print(response.choices[0].message.content)
 
 history.append({"role": "assistant", "content": response.choices[0].message.content})
 history.append({"role": "system", "content": "You should generate every question like the COT process"})
 
-question = 1
+question = 1  #can be revised into question = int(input())
 with open('questions.txt', 'w') as outfile_1, open('ratings.txt', 'w') as outfile_2:
     while question <= 5:
         history.append({"role": "user", "content": f"generate a question on the {topic}"})
