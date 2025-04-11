@@ -2,9 +2,11 @@ Prompting Strategy for BetterKiwi
 
 Part I 
 ## Overview
-The code in this folder serves as the original mind for our DIC, which uses OpenAI's API and GPT-4-turbo model to generate complex and tricky multiple-choice questions (MCQs) related to computer science topics (we use data structures course as an example). 
+The code in this folder serves as the original mind for our DIC, which uses OpenAI's API and GPT-4-turbo model 
+to generate complex and tricky multiple-choice questions (MCQs) related to computer science topics (we use data structures course as an example). 
 
-It simulates the role of a difficult teacher who intentionally designs questions to test deep understanding and careful reasoning.
+It simulates the role of teacher who intentionally designs questions to test deep understanding and careful reasoning.
+
 
 Part II Explanation for the initial code
 
